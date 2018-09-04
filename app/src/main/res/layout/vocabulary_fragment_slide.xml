@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_number_vocabulary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="#ff0011"
+                    android:textStyle="bold"
+                    android:text="Câu 1" />
+
+                <TextView
+                    android:id="@+id/tv_question_vocabulary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="italic"
+                    android:text="Câu hỏi " />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+
+            <RadioGroup
+                android:id="@+id/radGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rad_a_vocabulary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:textSize="20dp"
+                    android:textColor="#1502c7"
+                    android:textStyle="bold"
+                    android:text="Đáp án a" />
+
+                <RadioButton
+                    android:id="@+id/rad_b_vocabulary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:textSize="20dp"
+                    android:textColor="#1502c7"
+                    android:textStyle="bold"
+                    android:text="Đáp án b" />
+
+                <RadioButton
+                    android:id="@+id/rad_c_vocabulary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:textSize="20dp"
+                    android:textColor="#1502c7"
+                    android:textStyle="bold"
+                    android:text="Đáp án c" />
+            </RadioGroup>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_auto_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/dp_8"
+                android:text="@string/auto_next" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
